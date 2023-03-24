@@ -10,12 +10,25 @@
     <?php include('nav.php'); ?>
 
     <div class="body">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat veritatis tenetur exercitationem accusantium sequi necessitatibus. Cum iste laboriosam rerum perferendis adipisci sed et nihil doloribus inventore eligendi fuga, nemo dolorum?</p>
+            <p class="search">search:<input type="search"></p>
+            
     </div>
 
     <style>
         .body {
-            
+            margin-top: 50px;
+            margin-left: 300px;
+            background-color: #BABABA;
+            width: 900px;
+            height: 600px;
+        }
+        .search {
+            display: flex;
+            font-size: 16px;
+            font-size: x-large;
+            justify-content: center;
+            background-color: gray;
+            padding: 18px;
         }
     </style>
 </body>
