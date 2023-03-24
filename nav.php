@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,52 +18,7 @@
                 <a href="#">logout</a>
             </div>
         </div>
-
-
-
     </nav>
-
-
-
-    <style>
-        nav {
-            background-color: gray;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-
-        .dropbtn {
-            background-color: #C3C3C3;
-            font-size: 22px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #D9D9D9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
 </body>
 
 </html>
