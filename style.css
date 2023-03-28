@@ -55,7 +55,12 @@ nav {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+.nav-button{
+    width: 160px;
+    height: 30px;
+    font-size: 23px;
+    background-color: #C3C3C3;
+}
 /* login page */
 .logincontainer{
     display: flex;
