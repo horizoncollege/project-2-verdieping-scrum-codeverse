@@ -1,6 +1,6 @@
 DROP DATABASE IF EXISTS `codeverse`;
 
-CREATE DATABASE `CodeVerse`;
+CREATE DATABASE `codeverse`;
 
 USE `codeverse`;
 
