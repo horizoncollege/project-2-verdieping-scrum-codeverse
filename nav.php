@@ -13,7 +13,7 @@
             <h1><button class="dropbtn">account</button></h1>
 
             <div class="dropdown-content">
-                <a href="#">profile</a>
+                <a href="contact.php">contact</a>
                 <a href="#">?</a>
                 <a href="logout.php">logout</a>
             </div>
