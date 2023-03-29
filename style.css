@@ -30,6 +30,10 @@
     width: 35rem;
 }
 
+.search > input {
+    margin-left: 2rem;
+}
+
 /* navbar */
 nav {
     background-color: gray;
