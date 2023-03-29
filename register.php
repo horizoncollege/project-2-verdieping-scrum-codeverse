@@ -18,7 +18,7 @@
                 <br>
                 <input type="submit" value="submit"> 
             </form>
-                <a class="login-a" href="login.php"><input class="login-button" type="submit" value="login"></a>
+                <a class="login-a" href="login.php">Already a member? login</a>
             </div>
     </div>
 </body>

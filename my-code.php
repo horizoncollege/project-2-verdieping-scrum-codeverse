@@ -13,6 +13,7 @@
             <p class="search">search:<input type="search"></p>
             
     </div>
+    <?php include('footer.php'); ?>
 </body>
 
 </html>

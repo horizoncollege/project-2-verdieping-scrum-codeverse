@@ -6,11 +6,11 @@
 </head>
 
 <body>
-    <nav>
+    <footer>
         <img class="footerlogo" src="images/logo.png" alt="logo">
         <h1>ToC</h1>
         <h1>Copyright</h1>
 
-    </nav>
+</footer>
 </body>
 </html>
