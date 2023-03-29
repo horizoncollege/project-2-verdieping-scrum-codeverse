@@ -21,7 +21,6 @@
                 <a class="login-a" href="login.php"><input class="login-button" type="submit" value="login"></a>
             </div>
     </div>
-    <?php include('footer.php'); ?>
 </body>
 
 </html>

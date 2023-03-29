@@ -21,7 +21,7 @@
                 <a class="register-a" href="register.php"><input class="register-button" type="submit" value="register"></a>
             </div>
     </div>
-    <?php include('footer.php'); ?>
+ 
 </body>
 
 </html>
