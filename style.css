@@ -114,6 +114,8 @@ form{
     }
     .edit-submit-button{
     display: flex;
+    margin-top: 15px;
+    margin-left: 96px;
     }
     .edit-code-input-text{
         width: 1000px;
