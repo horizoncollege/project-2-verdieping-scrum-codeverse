@@ -22,6 +22,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    position: sticky;
 }
 
 .dropbtn {
@@ -148,4 +149,8 @@ form{
     border-radius: 16px;
     overflow: hidden;
     transition: all 0.2s;
+}
+.contactbody{
+    display: flex;
+    justify-content: center;
 }
