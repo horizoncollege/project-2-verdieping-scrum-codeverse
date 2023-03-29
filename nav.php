@@ -13,7 +13,7 @@
             <h1><button class="dropbtn">account</button></h1>
 
             <div class="dropdown-content">
-                <a href="my-code.php">my codes</a>
+                <a href="mycode.php">my codes</a>
                 <a href="logout.php">logout</a>
             </div>
         </div>
