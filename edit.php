@@ -12,11 +12,13 @@
     <div class="edit-body">
         <div class="input-box">
             <div class="edit-code-text">
+                <form>
                 <h2>repisotory name:</h2>
                 <h4>date of upload/lastupdate:</h4>
                 <h4>languages and license:</h4>
                 <h4>author:</h4>
                 <h4>tags:</h4>
+                </form>
             </div>
             <h2>code: </h2>
             <div class="edit-code-input">
