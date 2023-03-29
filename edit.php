@@ -20,10 +20,10 @@
             </div>
             <h2>code: </h2>
             <div class="edit-code-input">
-                <textarea class="edit-code-input-text" rows="35" type="text"></textarea>
+                <textarea class="edit-code-input-text" rows="30" type="text"></textarea>
             </div>
-            <div class="edit-code-button">
-
+            <div class="edit-submit-button">
+            <input type="submit" value="submit">
             </div>
         </div>
     </div>
