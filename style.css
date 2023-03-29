@@ -1,11 +1,11 @@
 /* index page */
-
 .maincontainer {
     margin-top: 50px;
     margin-left: 300px;
     background-color: #BABABA;
     width: 56.6rem;
     height: 40rem;
+    box-shadow: 7px 7px 5px 10px #DEDEDE;
 }
 .search {
     display: flex;
@@ -187,4 +187,12 @@ h3 {
 .footerlogo {
     width: 100px;
     height: 80px;
+}
+footer {
+    margin-top: 5%;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: sticky;
 }
