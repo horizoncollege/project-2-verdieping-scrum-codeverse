@@ -9,7 +9,7 @@
 <body>
     <?php include('nav.php'); ?>
     <h1 class="my-code-title">my code</h1>
-    <div class="body">
+    <div class="maincontainer">
             <p class="search">search:<input type="search"></p>
             
     </div>
