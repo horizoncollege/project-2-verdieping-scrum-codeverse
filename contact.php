@@ -6,7 +6,7 @@
 <body>
 <?php include('nav.php'); ?>
     <!-- het contactformulier -->
-    <div class="formulier d-flex justify-content-center">
+    <div class="contactformulier">
             <div class="container" style="margin-bottom: 50px; margin-top: 30px">
                 <section class="mb-4">
                     <div class="row">
@@ -14,34 +14,6 @@
                             <div class="d-flex text-center">
                                 <form id="contact-form" name="contact-form" action="mail.php" method="POST">
                                     <div class="row">
-
-                                        <!-- dropdown -->
-                                        <div class="col-md-6">
-                                            <label for="dropdown_wie">Aan wie wilt u een vraag stellen?</label>
-                                            <br>
-                                            <select id="dropdown_wie" name="aanwie">
-                                                <option style="display:none">Maak een keuze</option>
-                                                <option value="makers" name="makers">Makers van de website</option>
-                                                <option value="docent" name="docentwie">Docent</option>
-                                                <option value="servicepunt" name="service">Servicepunt</option>
-                                            </select>
-                                        </div>
-                                        <!-- dropdown -->
-
-                                        <!-- dropdown -->
-                                        <div class="col-md-6">
-                                            <label for="dropdown_relatie">Uw relatie met het Horizon College</label>
-                                            <br>
-                                            <select id="dropdown_relatie" name="relatie">
-                                                <option style="display:none">Maak een keuze</option>
-                                                <option value="student" name="student">Student</option>
-                                                <option value="docentrel" name="docentrel">Docent</option>
-                                                <option value="ouder" name="ouder">Ouder</option>
-                                                <option value="anders" name="anders">Anders</option>
-                                            </select>
-                                        </div>
-                                        <!-- dropdown -->
-
                                         <!-- NAAM -->
                                         <div class="col-md-6">
                                             <div class="md-form mb-0">
