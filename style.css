@@ -94,3 +94,9 @@ form{
     margin-left: 170px;
     margin-top: -20px;
 }
+.my-code-title{
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    margin-bottom: -10px;
+}
