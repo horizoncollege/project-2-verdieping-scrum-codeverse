@@ -159,7 +159,9 @@ form{
     width: 700px;
 }
 
-
+.detailcode {
+    width: 40rem;
+}
 .verzend {
     font-family: inherit;
     font-size: 20px;

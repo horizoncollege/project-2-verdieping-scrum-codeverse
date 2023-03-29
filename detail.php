@@ -25,9 +25,3 @@
 </body>
 
 </html>
-
-<style>
-    .detailcode {
-        width: 40rem;
-    }
-</style>
