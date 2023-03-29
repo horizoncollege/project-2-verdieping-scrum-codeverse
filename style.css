@@ -105,7 +105,7 @@ form{
 .edit-code-text{
     display: flex;
     flex-direction: column;
-    
+
     }
     .edit-code-input{
     display: flex;
@@ -113,3 +113,29 @@ form{
     .edit-submit-button{
     display: flex;
     }
+    /* contact */
+
+.formulier {
+    background-color: lightgray;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+
+.verzend {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
