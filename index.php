@@ -10,7 +10,28 @@
     <?php include('nav.php'); ?>
 
     <div class="maincontainer">
-        <p class="search">search bar<input type="search"></p>    
+        <p class="search">search bar<input type="search"></p>
+
+        <div class="rows">
+            <div class="codebox">
+                <p>Repository name:</p>
+                <p>Author Tags</p>
+                <p>Date of upload/Last Update, language, licence</p>
+            </div>
+
+            <div class="codebox">
+                <p>Repository name:</p>
+                <p>Author Tags</p>
+                <p>Date of upload/Last Update, language, licence</p>
+            </div>
+
+            <div class="codebox">
+                <p>Repository name:</p>
+                <p>Author Tags</p>
+                <p>Date of upload/Last Update, language, licence</p>
+            </div>
+        </div>
+
     </div>
 
 </body>
