@@ -109,12 +109,22 @@ form{
     }
     .edit-code-input{
     display: flex;
+    justify-content: center;
     }
     .edit-submit-button{
     display: flex;
     }
+    .edit-code-input-text{
+        width: 1000px;
+    }
+    .edit-body{
+        margin-top: 50px;
+        margin-left: 150px;
+        background-color: #BABABA;
+        width: 1200px;
+        height: 900px;
+    }
     /* contact */
-
 .formulier {
     background-color: lightgray;
     padding: 30px;
