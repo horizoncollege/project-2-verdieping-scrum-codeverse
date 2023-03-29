@@ -9,10 +9,17 @@
 <body>
     <?php include('nav.php'); ?>
 
-    <div class="body">
-            <p class="search">search:<input type="search"></p>
-            
+    <h2>detail</h2>
+    
+    <div class="maincontainer">
+            <h3>repository name:</h3>
+            <p class="detailinh">date of upload/last update:</p>
+            <p class="detailinh">languages and license:</p>
+            <p class="detailinh">author:</p>
+            <p class="detailinh">tags:</p>
     </div>
+
+    <?php include('footer.php'); ?>
 </body>
 
 </html>
