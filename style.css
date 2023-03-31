@@ -101,21 +101,11 @@ form{
     flex-direction: column;
     padding: 40px;
 }
-.register-button{
-    display: flex;
-    margin-left: 170px;
-    margin-top: -20px;
-}
 .register-a{
     text-decoration: none;
 }
 .login-a{
     text-decoration: none;
-}
-.login-button{
-    display: flex;
-    margin-left: 170px;
-    margin-top: -20px;
 }
 /* my-code */
 .my-code-title{
