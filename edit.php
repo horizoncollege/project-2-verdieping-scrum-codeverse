@@ -8,28 +8,20 @@
 
 <body>
     <?php include('nav.php'); ?>
-    <h1 class="my-code-title">edit code</h1>
-    <div class="edit-body">
-        <div class="input-box">
-            <div class="edit-code-text">
-                <form>
-                <h2>repisotory name:</h2>
-                <h4>date of upload/lastupdate:</h4>
-                <h4>languages and license:</h4>
-                <h4>author:</h4>
-                <h4>tags:</h4>
-                </form>
-            </div>
-            <h2>code: </h2>
-            <div class="edit-code-input">
-                <textarea class="edit-code-input-text" rows="30" type="text"></textarea>
-            </div>
-            <div class="edit-submit-button">
-            <input type="submit" value="submit">
-            </div>
+    <h2>edit</h2>
+
+    <div class="maincontainer">
+        <h3>repository name:</h3>
+        <p class="detailinh">date of upload/last update:</p>
+        <p class="detailinh">languages and license:</p>
+        <p class="detailinh">author:</p>
+        <p class="detailinh">tags:</p>
+        <h3>code:</h3>
+        <div class="edit-code-input">
+            <textarea class="detailcode" rows="20" type="text" readonly></textarea>
         </div>
     </div>
     <?php include('footer.php'); ?>
 </body>
-
 </html>
+
