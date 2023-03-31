@@ -20,24 +20,8 @@
         <div class="edit-code-input">
             <textarea class="detailcode" rows="20" type="text" readonly></textarea>
         </div>
-        <?php include('footer.php'); ?>
+    </div>
+    <?php include('footer.php'); ?>
 </body>
-
 </html>
 
-<style>
-    body {
-        background-image: url('images/codebackground.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    nav {
-    background-color: gray;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: sticky;
-    background-color: #2F80ED;
-}
-</style>

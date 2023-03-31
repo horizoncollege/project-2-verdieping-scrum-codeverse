@@ -2,10 +2,11 @@
 .maincontainer {
     margin-top: 50px;
     margin-left: 300px;
-    background-color: #BABABA;
+    background-color: #e3e3e3;
     width: 56.6rem;
     height: 40rem;
-    box-shadow: 7px 7px 5px 10px #ff0000;
+    border-style: solid;
+    border-color: rgb(141, 141, 141);
 }
 .search {
     display: flex;
@@ -36,11 +37,13 @@
 
 /* navbar */
 nav {
-    background-color: gray;
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     position: sticky;
+    background-color: #0621B2;
+
 }
 
 .dropbtn {
@@ -96,16 +99,29 @@ nav {
     flex-direction: column;
     align-items: center;
 }
+body {
+    background-color: #ffffff;
+}
 form{
     display: flex;
     flex-direction: column;
     padding: 40px;
+}
+.register-button{
+    display: flex;
+    margin-left: 170px;
+    margin-top: -20px;
 }
 .register-a{
     text-decoration: none;
 }
 .login-a{
     text-decoration: none;
+}
+.login-button{
+    display: flex;
+    margin-left: 170px;
+    margin-top: -20px;
 }
 /* my-code */
 .my-code-title{
@@ -190,7 +206,7 @@ h3 {
 }
 footer {
     margin-top: 5%;
-    background-color: gray;
+    background-color: #0621B2;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

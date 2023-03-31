@@ -16,10 +16,12 @@
                 <br>
                 <input type="password" name="password" placeholder="password" required>
                 <br>
-                <input type="submit" value="sign in"> 
+                <input type="submit" value="submit"> 
             </form>
-                <a class="register-a" href="register.php">not yet a member? register</a>
+                <a class="register-a" href="register.php">not yet a member? registern</a>
             </div>
     </div>
  
 </body>
+
+</html>
