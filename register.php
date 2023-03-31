@@ -10,7 +10,7 @@
         <img class="logo" src="images/logo.png">
         <br>
             <div class="login">
-            <form action="" method="post">
+            <form action="index.php" method="post">
                 
                 <input type="text" name="username" placeholder="Username" required>
                 <br>
