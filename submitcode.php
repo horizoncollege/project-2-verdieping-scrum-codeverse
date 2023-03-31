@@ -8,7 +8,7 @@
 
 <body>
     <?php include('nav.php'); ?>
-    <h2>edit</h2>
+    <h2>submit code</h2>
 
     <div class="maincontainer">
         <h3>repository name:</h3>
@@ -25,4 +25,3 @@
     <?php include('footer.php'); ?>
 </body>
 </html>
-
