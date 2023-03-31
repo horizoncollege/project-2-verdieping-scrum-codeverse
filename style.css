@@ -13,7 +13,7 @@
     font-size: 16px;
     font-size: x-large;
     justify-content: center;
-    background-color: gray;
+    background-color: #0621B2;
     padding: 18px;
 }
 
@@ -24,13 +24,14 @@
 }
 
 .codebox {
-    background-color: grey;
+    background-color: rgb(205, 205, 205);
+    border-style: solid;
+    border-color: rgb(209, 209, 209);
     padding: 1rem;
     margin: 1rem;
     height: 7rem;
     width: 35rem;
 }
-
 .search > input {
     margin-left: 2rem;
 }

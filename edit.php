@@ -18,7 +18,7 @@
         <p class="detailinh">tags:</p>
         <h3>code:</h3>
         <div class="edit-code-input">
-            <textarea class="detailcode" rows="20" type="text" readonly></textarea>
+            <textarea class="detailcode" rows="20" type="text"></textarea>
         </div>
     </div>
     <?php include('footer.php'); ?>
