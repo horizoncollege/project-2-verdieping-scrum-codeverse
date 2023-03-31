@@ -18,7 +18,7 @@
                 <br>
                 <input type="submit" value="submit"> 
             </form>
-                <a class="register-a" href="register.php">not yet a member? registern</a>
+                <a class="register-a" href="register.php">not yet a member? register</a>
             </div>
     </div>
  
