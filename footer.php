@@ -8,9 +8,33 @@
 <body>
     <footer>
         <img class="footerlogo" src="images/logo.png" alt="logo">
-        <h1>ToC</h1>
-        <h1>Copyright</h1>
+        <div class="footertekst1">
+            <p>home</p>
+            <p>contact</p>
+            <p>my code</p>
+        </div>
+        <p>made by: Tim Stijn Fredped en Daafslaaf</p>
 
-</footer>
+    </footer>
 </body>
+
 </html>
+
+<style>
+    .footerlogo {
+        width: 120px;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        color: #ffffff;
+        margin-top: 5%;
+        background-color: #0621B2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: sticky;
+    }
+</style>
