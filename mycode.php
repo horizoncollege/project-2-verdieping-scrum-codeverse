@@ -10,8 +10,8 @@
     <?php include('nav.php'); ?>
     <h1 class="my-code-title">my code</h1>
     <div class="maincontainer">
-            <p class="search">search:<input type="search"></p>
-            
+            <p class="search">search:<input type="search"><a href="submitcode.php"><input class="add-code-button" type="submit" value="add-code"></a></p>
+
     </div>
     <?php include('footer.php'); ?>
 </body>

@@ -18,6 +18,10 @@
     padding: 18px;
 }
 
+.add-code-button{
+margin-left: 5em;
+}
+
 .rows {
     display: flex;
     flex-direction: column;
