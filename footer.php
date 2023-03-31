@@ -8,9 +8,14 @@
 <body>
     <footer>
         <img class="footerlogo" src="images/logo.png" alt="logo">
-        <h1>ToC</h1>
-        <h1>Copyright</h1>
+        <div class="footertekst1">
+            <p>home</p>
+            <p>contact</p>
+            <p>my code</p>
+        </div>
+        <p>made by: Tim Stijn Fredped en Daafslaaf</p>
 
-</footer>
+    </footer>
 </body>
+
 </html>

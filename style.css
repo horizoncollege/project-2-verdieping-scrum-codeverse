@@ -14,6 +14,7 @@
     font-size: x-large;
     justify-content: center;
     background-color: #0621B2;
+    margin-top: 0em;
     padding: 18px;
 }
 
@@ -202,10 +203,14 @@ h3 {
     margin-left: 5rem;
 }
 .footerlogo {
-    width: 100px;
-    height: 80px;
+    width: 120px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 footer {
+    color: #ffffff;
     margin-top: 5%;
     background-color: #0621B2;
     display: flex;
