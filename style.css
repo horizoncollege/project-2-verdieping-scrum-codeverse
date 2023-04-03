@@ -13,7 +13,7 @@
     font-size: 16px;
     font-size: x-large;
     justify-content: center;
-    background-color: #0621B2;
+    background-color: rgba(71, 61, 139, 0.881);
     margin-top: 0em;
     padding: 18px;
 }
@@ -48,7 +48,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     position: sticky;
-    background-color: #0621B2;
+    background-color: rgba(71, 61, 139, 0.881);
 
 }
 
@@ -249,7 +249,7 @@ h3 {
 footer {
     color: #ffffff;
     margin-top: 5%;
-    background-color: #0621B2;
+    background-color: rgba(71, 61, 139, 0.881);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
