@@ -13,7 +13,7 @@
             <p>contact</p>
             <p>my code</p>
         </div>
-        <p>made by: Tim Stijn Fredped en Daafslaaf</p>
+        <p>made by: Tim, Stijn Frederikus en Timo</p>
 
     </footer>
 </body>
