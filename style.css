@@ -164,32 +164,63 @@ form{
         height: 900px;
     }
     /* contact */
-.formulier {
-    background-color: lightgray;
-    padding: 30px;
-    border-radius: 20px;
+
+
+@media only screen and (min-width: 1500px) {
+.flow {
     display: flex;
-    flex-direction: column;
-    width: 700px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
 }
 
-.detailcode {
-    width: 40rem;
+@media only screen and (max-width: 1499px) {
+.flow {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-left: 20%;
 }
-.verzend {
-    font-family: inherit;
-    font-size: 20px;
-    background: royalblue;
+
+.contacttext {
+    margin-bottom: 6rem;
+}
+}
+
+.contactcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BABABA;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+.contacttext {
+    width: 23rem;
+    border-radius: 1rem;
+    background-color:rgba(71, 61, 139, 0.881);
     color: white;
-    padding: 0.7em 1em;
-    padding-left: 0.9em;
+    padding: 2rem;
+}
+
+form {
     display: flex;
     align-items: center;
-    border: none;
-    border-radius: 16px;
-    overflow: hidden;
-    transition: all 0.2s;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 29rem;
+    height: 19rem;
 }
+
+#verzend, label, input, textarea {
+    margin: 0.2rem;
+    width: 20rem;
+}
+
+/* voor de detailpagina */
 .contactbody{
     display: flex;
     justify-content: center;

@@ -3,93 +3,37 @@
 <head>
     <title>contact</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  </head>
 </head>
 <body>
+
 <?php include('nav.php'); ?>
-    <!-- het contactformulier -->
-    <div class="contactbody">
-    <div id="contactformulier" class="formulier d-flex justify-content-center">
-            <div class="container" style="margin-bottom: 50px; margin-top: 30px">
-                <section class="mb-4">
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <div class="d-flex text-center">
-                                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                                    <div class="row">
-                                        <!-- NAAM -->
-                                        <div class="col-md-6">
-                                            <div class="md-form mb-0">
-                                                <br>
-                                                <label for="forename" class="d-block p text-black font-weight-bold">voornaam</label>
-                                                <input type="text" required id="forename" name="forename" class="form-control" style="padding: 13px;">
-                                                <label for="lastname" class="d-block p text-black font-weight-bold">achternaam</label>
-                                                <input type="text" id="lastname" name="lastname" class="form-control" style="padding: 13px;">
-                                            </div>
-                                        </div>
-                                        <!-- NAAM -->
 
-                                        <!-- E-mail -->
-                                        <div class="col-md-6">
-                                            <div class="md-form mb-0">
-                                                <br>
-                                                <label for="email" class="d-block p text-black font-weight-bold">E-mail</label>
-                                                <input type="email" id="email" name="email" class="form-control" style="padding: 13px">
-                                            </div>
-                                        </div>
+<div class="flow">
 
-                                    </div>
-                                    <br>
-                                    <!-- telefoonnummer -->
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="md-form mb-0">
-                                                <label for="subject" class="d-block p text-black font-weight-bold">Telefoonnummer</label>
-                                                <input type="number" id="phonenumb" name="phonenumb" class="form-control" style="padding: 13px;">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <br>
-                                    <!-- het bericht -->
-                                    <div class="row">
-                                        <div class="col-md-12">
-
-                                            <div class="md-form">
-                                                <label for="message" class="d-block p text-black font-weight-bold">Bericht</label>
-                                                <textarea maxlength="500" type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <br>
-
-                                    <!-- Button voor versturen-->
-                                    <div class="text-left text-md-left d-flex justify-content-center text-center" style="margin-bottom: -40px;">
-                                        <button type="submit" class="verzend">
-                                            <div class="svg-wrapper-1">
-                                                <div class="svg-wrapper">
-                                                    <svg viewBox="0 0 24 24" width="24" height="24">
-                                                        <path fill="none" d="M0 0h24v24H0z"></path>
-                                                        <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <span>Send</span>
-                                        </button>
-                                    </div>
-
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
+    <div class="contacttext">
+        <h1>Questions or feedback? We'd love to hear it!</h1>
+        <p>If you have any criticism or require any assistence, we'd be glad to hear it! Our staff is always looking for suggestions and feedback. We'll do our best to reply as swiftly as possible.</p>
     </div>
-    <?php include('footer.php'); ?>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+    <div class="contactcontainer">
+        <form>
+            <label for="firstname">Voornaam:</label>
+            <input type="text" required id="firstname" name="firstname"></input>
+
+            <label for="surname">Achternaam:</label>
+            <input type="text" required id="surname" name="surname"></input>
+
+            <label for="email">E-mail:</label>
+            <input type="email" required id="email" name="email"></input>
+            <label for="message">Bericht:</label>
+            <textarea maxlength="500" id="message" name="message" rows="5" required></textarea>
+            <button id="verzend">Verzenden</button>
+        </form>
+    </div>
+
+</div>
+
+<?php include('footer.php'); ?>
+    
 </body>
 </html>
