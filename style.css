@@ -138,7 +138,7 @@ form{
     font-size: 45px;
     margin-bottom: -10px;
 }
-/* edit-code */
+/* edit-code and submit-code*/
 .edit-code-text{
     display: flex;
     flex-direction: column;
@@ -162,6 +162,18 @@ form{
         background-color: #BABABA;
         width: 1200px;
         height: 900px;
+    }
+    .submitcontainer {
+        margin-top: 50px;
+        margin-left: 300px;
+        background-color: #e3e3e3;
+        width: 56.6rem;
+        height: 40rem;
+        border-style: solid;
+        border-color: rgb(141, 141, 141);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     /* contact */
 
