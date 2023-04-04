@@ -7,15 +7,41 @@
 
 <body>
     <footer>
-        <img class="footerlogo" src="images/logo.png" alt="logo">
         <div class="footertekst1">
-            <p>home</p>
-            <p>contact</p>
-            <p>my code</p>
+            <div>
+                <p><img class="footericon" src="images/mail.jpg" alt="logo"></p>
+                <p><img class="footericon" src="images/maps.png" alt="logo"></p>
+                <p>my code</p>
+            </div class="footerinfo">
+            <p>Codeverse@gmail.com</p>
+            <p>68 W.M. Dudokweg</p>
         </div>
-        <p>made by: Tim, Stijn Frederikus en Timo</p>
+        <div class="copyright">
+            <p>©CodeVerse Media Ltd.</p>
+        </div>
+        
 
     </footer>
 </body>
 
 </html>
+
+<style>
+    .footericon {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer {
+        color: #ffffff;
+        background-color: rgba(71, 61, 139, 0.881);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footertekst1 {
+        display: flex;
+        flex-direction: row;
+    }
+</style>
