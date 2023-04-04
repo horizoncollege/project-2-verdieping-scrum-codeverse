@@ -11,8 +11,6 @@
 
 <body>
     <?php include('nav.php'); ?>
-    <h2>submit code</h2>
-
     <div class="submitcontainer">
         <div class="codeinfo">
         <h3>repository name: <input type="text"></h3>
