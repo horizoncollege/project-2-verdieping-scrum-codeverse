@@ -7,10 +7,10 @@
 
 <body>
     <nav>
-        <h1><a href="index.php"><input class="nav-button" type="submit" value="home"></a></h1>
-        <h1><a href="contact.php"><input class="nav-button" type="submit" value="contact"></a></h1>
+        <h1><a href="index.php"><input class="button-name" type="submit" value="home"></a></h1>
+        <h1><a href="contact.php"><input class="button-name" type="submit" value="contact"></a></h1>
         <div class="dropdown">
-            <h1><button class="dropbtn">account</button></h1>
+            <h1><button class="button-name">account</button></h1>
 
             <div class="dropdown-content">
                 <a href="mycode.php">my code</a>
