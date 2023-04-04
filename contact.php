@@ -20,17 +20,17 @@
 
     <div class="contactcontainer">
         <form>
-            <label for="firstname">Voornaam:</label>
+            <label for="firstname">Firstname:</label>
             <input type="text" required id="firstname" name="firstname"></input>
 
-            <label for="surname">Achternaam:</label>
+            <label for="surname">Lastname:</label>
             <input type="text" required id="surname" name="surname"></input>
 
             <label for="email">E-mail:</label>
             <input type="email" required id="email" name="email"></input>
-            <label for="message">Bericht:</label>
+            <label for="message">message:</label>
             <textarea maxlength="500" id="message" name="message" rows="5" required></textarea>
-            <button id="verzend">Verzenden</button>
+            <button id="verzend">submit</button>
         </form>
     </div>
 
