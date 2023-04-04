@@ -21,8 +21,10 @@ a{
     font-size: x-large;
     justify-content: center;
     background-color: rgba(71, 61, 139, 0.881);
-    margin-top: 0em;
+    margin-top: 0rem;
     padding: 18px;
+    color: white;
+    
 }
 
 .add-code-button{
