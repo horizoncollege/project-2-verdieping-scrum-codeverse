@@ -12,7 +12,7 @@
 
     <div class="submitcontainer">
         <div class="codeinfo">
-        <h3>repository name: <textarea name="name" id="name" cols="30" rows="1"></textarea></h3>
+        <h3>repository name: <input type="text"></h3>
         <p class="detailinh">date of upload/last update:</p>
         <p class="detailinh">languages and license:</p>
         <p class="detailinh">author:</p>
