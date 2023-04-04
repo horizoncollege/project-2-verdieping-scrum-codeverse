@@ -18,7 +18,9 @@
                 <br>
                 <input type="submit" value="submit"> 
             </form>
-                <a class="login-a" href="login.php">Already a member? login</a>
+            <div class="login-register-member">
+                <a class="register-a" href="register.php">not yet a member? register</a>
+            </div>
             </div>
     </div>
 </body>
