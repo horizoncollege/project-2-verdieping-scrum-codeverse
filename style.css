@@ -296,12 +296,6 @@ h3 {
     margin-left: 5rem;
 }
 /* footer style */
-.footerlogo {
-    width: 120px;
-    height: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
 footer {
     color: #ffffff;
@@ -311,4 +305,32 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     position: sticky;
+}
+
+.footerh1 {
+    display: flex;
+    justify-content: space-between;
+}
+.footericon {
+    width: 30px;
+    height: 30px;
+}
+a {
+    color: white;
+}
+.footertekst {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerinfo {
+    margin-left: 10px;
+}
+
+.mail {
+    margin-top: 23px;
+}
+
+.maps {
+    margin-top: 30px;
 }
