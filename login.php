@@ -16,7 +16,7 @@
                 <br>
                 <input type="password" name="password" placeholder="password" required>
                 <br>
-                <input type="submit" value="submit">
+                <input class="button-name" type="submit" value="submit">
             </form>
             <div class="login-register-member">
                 <a class="register-a" href="register.php">not yet a member? register</a>
