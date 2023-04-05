@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "bit_academy";
-$password = "bit_academy";
+$username = "root";
+$password = "";
 $dbname = "codeverse";
 
 
