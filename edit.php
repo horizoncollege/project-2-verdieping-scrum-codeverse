@@ -10,9 +10,10 @@
 </head>
 
 <body>
+    <!--here is linked to the nav.php so you can see the navbar -->
     <?php include('nav.php'); ?>
     <h2>edit</h2>
-
+    <!--input in the main container -->
     <div class="maincontainer">
         <h3>repository name:</h3>
         <p class="detailinh">date of upload/last update:</p>
@@ -25,7 +26,8 @@
         </div>
         <button>submit</button>
     </div>
+    <!--here is linked to the footer.php so you can see the footer -->
     <?php include('footer.php'); ?>
 </body>
-</html>
 
+</html>
