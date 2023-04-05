@@ -26,9 +26,6 @@ function dbconnect(){
     } catch (PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
     }
-
-
-    return $conn;
 }
 
     $conn = dbconnect();
