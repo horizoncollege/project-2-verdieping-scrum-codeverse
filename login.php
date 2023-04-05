@@ -14,7 +14,7 @@
         <br>
         <div class="login">
             <form action="index.php" method="post">
-
+                <!--the form to log in--> 
                 <input type="text" name="username" placeholder="Username" required>
                 <br>
                 <input type="password" name="password" placeholder="password" required>

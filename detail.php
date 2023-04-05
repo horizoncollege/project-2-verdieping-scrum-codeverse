@@ -12,7 +12,7 @@
 <body>
     <?php include('nav.php'); ?>
     <h2>detail</h2>
-
+    <!--the datails of the repository's-->
     <div class="maincontainer">
         <h3>repository name:</h3>
         <p class="detailinh">date of upload/last update:</p>

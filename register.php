@@ -12,6 +12,7 @@
     <div class="logincontainer">
         <img class="logo" src="images/logo.png">
         <br>
+            <!--the form to register an account-->
             <div class="login">
             <form action="index.php" method="post">
                 

@@ -17,7 +17,7 @@
         <h1>Questions or feedback? We'd love to hear it!</h1>
         <p>If you have any criticism or require any assistence, we'd be glad to hear it! Our staff is always looking for suggestions and feedback. We'll do our best to reply as swiftly as possible.</p>
     </div>
-
+    <!--the form for contacting the devs-->
     <div class="contactcontainer">
         <form>
             <label for="firstname">First name:</label>

@@ -1,4 +1,5 @@
     <nav>
+        <!--the buttons for the other pages-->
         <h1><a href="index.php"><input class="button-name" type="submit" value="home"></a></h1>
         <h1><a href="contact.php"><input class="button-name" type="submit" value="contact"></a></h1>
 
