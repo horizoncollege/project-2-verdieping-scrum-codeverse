@@ -10,17 +10,24 @@
 </head>
 
 <body>
-<?php include('nav.php'); ?>
+<?php session_start(); include('nav.php'); include('config.php'); if (!isset($_SESSION['username'])) {header("location:login.php");} ?>
  <!--the datails of the repository's-->
     <div class="maincontainer">
-        <h3>repository</h3>
-        <p class="detailinh">Made by:</p>
-        <p class="detailinh">Tags:</p>
-        <p class="detailinh">Last version:</p>
-        <p class="detailinh">Licence:</p>
-        <p class="detailinh">Code:</p>
-        <textarea disabled class="codefield"></textarea>
+        <h1>add code</h1>
+        <form method="POST" action="process.php">
+        <input class="detailinh" type="text" required name="repository" placeholder="repository">
+        <input class="detailinh" type="date" required name="date">
+        <input class="detailinh" type="text" required name="language" placeholder="programming language">
+        <input class="detailinh" type="text" required name="tags" placeholder="tags">
+        <input class="detailinh" required type="text" name="licence" placeholder="licence">
+        <select required name="public">
+            <option value="1">public</option>
+            <option value="0">private</option>
+        </select>
+        <textarea class="codefield" required rows="5" cols="50" name="code"></textarea>
+        <button type="submit" value="submit">Submit</button>
+        </form>
     </div>
-    <?php include('footer.php'); ?>
+
 </body>
 </html>

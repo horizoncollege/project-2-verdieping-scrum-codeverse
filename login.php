@@ -41,7 +41,7 @@
       
         if ((is_array($result)) && ($user == $result['nameuser'])) {
             $_SESSION['loggedInUser'] = $result['id'];
-            $_SESSION['username'] = $result['username'];
+            $_SESSION['username'] = $result['nameuser'];
     
             header("Location: index.php");
         } else {
