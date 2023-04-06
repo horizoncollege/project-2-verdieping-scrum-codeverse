@@ -26,33 +26,32 @@
         </div>
     </div>
 
-
-
-
     <?php
     session_start();
-    include("config.php");
-    echo "<div class='container'>";
-
-    $stmt = $conn->prepare("SELECT username, wachtwoord FROM gebruikers");
-    $stmt->execute();
-    $row = $stmt->fetch();
-
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-
-        if ($username == $row['username'] && $password == $row['wachtwoord']) {
-            $_SESSION['username'] = $username;
-            $_SESSION['loggedInUser'] = $row['username'];
-
-            header('Location: index.php');
-            exit;
-        } 
+    if (isset($_POST['username']) && isset($_POST['password'])) {
+        include('config.php');
+        $user = $_POST['username'];
+        $pass = $_POST['password'];
+        $sql = "SELECT * FROM users WHERE (nameuser = :username) AND (password = :password)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindParam(":username", $user);
+        $stmt->bindParam(":password", $pass);
+        $stmt->execute();
+        $result = $stmt->fetch();
+      
+        if ((is_array($result)) && ($user == $result['nameuser'])) {
+            $_SESSION['loggedInUser'] = $result['id'];
+            $_SESSION['username'] = $result['username'];
+    
+            header("Location: index.php");
+        } else {
+            $_SESSION['loggedInUser'] = "fout";
+            echo "FOUT!!! SUSSSSS!! AMOGUS";
+        }
     }
+    
+    $conn = null;
     ?>
-
-
 
 </body>
 
