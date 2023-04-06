@@ -16,6 +16,7 @@
     <div class="flow">
 
         <div class="contacttext">
+            <!--text over contact-->
             <h1>Questions or feedback? We'd love to hear it!</h1>
             <p>If you have any criticism or require any assistence, we'd be glad to hear it! Our staff is always looking for suggestions and feedback. We'll do our best to reply as swiftly as possible.</p>
             <div class="contactlogodiv">
@@ -25,14 +26,16 @@
         <!--the form for contacting the devs-->
         <div class="contactcontainer">
             <form>
+                <!--firstname-->
                 <label for="firstname">First name:</label>
                 <input type="text" required id="firstname" name="firstname"></input>
-
+                <!--lastname-->
                 <label for="surname">Last name:</label>
                 <input type="text" required id="surname" name="surname"></input>
-
+                <!--email-->
                 <label for="email">E-mail:</label>
                 <input type="email" required id="email" name="email"></input>
+                <!--message-->
                 <label for="message">Message:</label>
                 <textarea maxlength="500" id="message" name="message" rows="5" required></textarea>
                 <input class="button-name" type="submit" value="Login">
