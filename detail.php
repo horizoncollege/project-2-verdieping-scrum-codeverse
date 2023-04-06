@@ -26,7 +26,7 @@
         <p class="detailinh">Last version: <?php echo $result['date'];?></p>
         <p class="detailinh">Licence: <?php echo $result['licence'];?></p>
         <p class="detailinh">Code:</p>
-        <div class="codefield"><p><?php echo $result['code'];?></p></div>
+        <textarea disabled class="codefield"><?php echo $result['code'];?></textarea>
     </div>
     <?php include('footer.php'); ?>
 </body>

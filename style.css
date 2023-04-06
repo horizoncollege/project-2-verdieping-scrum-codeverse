@@ -304,15 +304,25 @@ h3 {
 .detailinh {
     margin-top: 1rem;
     margin-left: 5rem;
+    border-bottom: 0.2rem solid rgb(200, 200, 200);
+    width: 15rem;
+    max-width: 20rem;
+}
+
+.detailinh:nth-child(6) {
+    font-size: large;
+    border-bottom: none;
+    margin-top: 3rem;
 }
 
 .codefield {
     background-color: #191919;
     width: 48rem;
     margin-left: 4.2rem;
+    height: 15rem;
 }
 
-.codefield p {
+textarea.codefield {
     color: #4AF626;
     padding: 1rem;
 }
