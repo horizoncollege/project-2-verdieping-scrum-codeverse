@@ -23,6 +23,7 @@
         <h3><?php echo $result['repository'];?></h3>
         <p class="detailinh">Made by: <?php echo $result['author'];?></p>
         <p class="detailinh">Tags: <?php echo $result['tags'];?></p>
+        <p class="detailinh">Tags: <?php echo $result['language'];?></p>
         <p class="detailinh">Last version: <?php echo $result['date'];?></p>
         <p class="detailinh">Licence: <?php echo $result['licence'];?></p>
         <p class="detailinh">Code:</p>

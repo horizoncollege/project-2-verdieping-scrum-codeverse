@@ -16,11 +16,12 @@
             <div class="login">
             <form action="index.php" method="post">
                 
-                <input type="text" name="username" placeholder="Username" required>
+                <input type="text" name="username" placeholder="username" required>
                 <br>
                 <input type="password" name="password" placeholder="password" required>
                 <br>
-                <input class="button-name" type="submit" value="submit"> 
+                <input type="email" name="password" placeholder="e-mail" required>
+                <button class="button-name">register</button>
             </form>
             <div class="login-register-member">
                 <a class="register-a" href="login.php">already a member? login</a>
