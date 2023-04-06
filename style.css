@@ -18,6 +18,9 @@ a{
     border-style: solid;
     border-color: rgb(141, 141, 141);
 }
+div.maincontainer {
+    overflow: auto;
+  }
 .search {
     display: flex;
     font-size: 16px;
