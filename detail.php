@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- include the highlight.js stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
     <title>CodeVerse details</title>
 </head>
 
@@ -16,9 +18,8 @@
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     $result = $stmt->fetch();
-    
     ?>
- <!--the datails of the repository's-->
+    <!--the details of the repository-->
     <div class="maincontainer">
         <h3><?php echo $result['repository'];?></h3>
         <p class="detailinh">Made by: <?php echo $result['author'];?></p>
@@ -27,9 +28,13 @@
         <p class="detailinh">Last version: <?php echo $result['date'];?></p>
         <p class="detailinh">Licence: <?php echo $result['licence'];?></p>
         <p class="detailinh">Code:</p>
-        <textarea disabled class="codefield"><?php echo $result['code'];?></textarea>
+        <!-- use a <pre> tag with a <code> tag for displaying the code -->
+        <pre><code class="<?php echo $result['language'];?>"><?php echo htmlspecialchars($result['code']);?></code></pre>
     </div>
     <?php include('footer.php'); ?>
+
+    <!-- include the highlight.js script and initialize it -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
-
