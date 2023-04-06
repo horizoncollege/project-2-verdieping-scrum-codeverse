@@ -25,5 +25,6 @@
             <p>©CodeVerse Media Ltd.</p>
         </div>
 
-
 </footer>
+
+<?php $conn = null; ?>

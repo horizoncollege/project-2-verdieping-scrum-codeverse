@@ -10,14 +10,9 @@
 </head>
 
 <body>
-    <?php include('nav.php'); 
-    $servername = "localhost";
-    $username = "bit_academy";
-    $password = "bit_academy";
-    $dbname = "codeverse";
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    <?php include('nav.php');
 
-    $sql = "SELECT * FROM code";
+    $sql = "SELECT * FROM code WHERE public = 1";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -28,12 +23,12 @@
         <?php
         foreach ($stmt as $nog) {
         echo "<div class='rows'>";
-        echo "<a href='detail.php?id=" . $nog['id'] . "'><div class='codebox'>";
+        echo "<a id='detailbutton' href='detail.php?id=" . $nog['id'] . "'><div class='codebox'>";
 
         echo "<p>Repository name: " . $nog['repository'] . "</p>";
         echo "<p>Author: " . $nog['author'] . "</p>";
         echo "<p>" . $nog['date'] . " " . $nog['tags'] . " " . $nog['licence'] . "</p>";
-        echo "</div>";
+        echo "</a></div>";
         echo "</div>";
         }
         ?>

@@ -1,4 +1,7 @@
 /* main style */
+#detailbutton {
+    color: black;
+}
 a{
     text-decoration: none;
 }
@@ -301,6 +304,17 @@ h3 {
 .detailinh {
     margin-top: 1rem;
     margin-left: 5rem;
+}
+
+.codefield {
+    background-color: #191919;
+    width: 48rem;
+    margin-left: 4.2rem;
+}
+
+.codefield p {
+    color: #4AF626;
+    padding: 1rem;
 }
 /* footer style */
 
