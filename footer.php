@@ -7,7 +7,7 @@
             <div>
                 <!-- images for the mail and location-->
                 <p><img class="footericon" src="images/mail.jpg" alt="logo"></p>
-                <p><img class="footericon" src="images/maps.png" alt="logo"></p>
+                <p><img class="footericon" id="mapicon" src="images/maps.png" alt="logo"></p>
             </div>
             <div class="footerinfo">
                 <p class="mail">Codeverse@gmail.com</p>
