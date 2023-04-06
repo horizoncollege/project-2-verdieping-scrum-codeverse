@@ -238,6 +238,8 @@ form{
         flex-direction: column;
         align-items: center;
     }
+
+    
     /* contact */
 
 
@@ -286,7 +288,7 @@ form{
     justify-content: center;
 }
 
-form {
+#contactform {
     display: flex;
     align-items: center;
     background-color: rgb(240, 240, 240);
@@ -347,7 +349,13 @@ h3 {
 textarea.codefield {
     color: #4AF626;
     padding: 1rem;
+    max-width: 48rem;
 }
+
+input.codefield {
+    color: #4AF626;
+}
+
 /* footer style */
 
 footer {
