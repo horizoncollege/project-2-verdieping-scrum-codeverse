@@ -11,7 +11,6 @@
 
 <body>
     <?php include('nav.php'); 
-    
     $servername = "localhost";
     $username = "bit_academy";
     $password = "bit_academy";
@@ -23,7 +22,6 @@
     $stmt->execute();
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
     ?>
-
     <div class="maincontainer">
         <p class="search">search bar<input type="search"></p>
 
@@ -35,12 +33,13 @@
         echo "<p>Repository name: " . $nog['repository'] . "</p>";
         echo "<p>Author: " . $nog['author'] . "</p>";
         echo "<p>" . $nog['date'] . " " . $nog['tags'] . " " . $nog['licence'] . "</p>";
+        echo "</div>";
+        echo "</div>";
         }
         ?>
 
     </div>
-
- <?php include('footer.php'); ?>
+    <?php include('footer.php'); ?>
 </body>
 
 </html>
