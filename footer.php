@@ -6,7 +6,7 @@
         <div class="footertekst">
             <div>
                 <!-- images for the mail and location-->
-                <p><img class="footericon" src="images/mail.jpg" alt="logo"></p>
+                <p><img class="footericon" src="images/mail.png" alt="logo"></p>
                 <p><img class="footericon" id="mapicon" src="images/maps.png" alt="logo"></p>
             </div>
             <div class="footerinfo">
