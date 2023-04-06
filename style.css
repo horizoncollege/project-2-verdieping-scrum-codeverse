@@ -328,7 +328,9 @@ h3 {
     overflow: auto;
 }
 
-
+.detailinh {
+    margin-left: 5rem;
+}
 .detailinh:nth-child(7) {
     font-size: large;
     border-bottom: none;
