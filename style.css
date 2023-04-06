@@ -250,10 +250,6 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #BABABA;
-    width: 40rem;
-    height: 30rem;
-    border-radius: 1rem;
 }
 
 .contacttext {
@@ -262,6 +258,15 @@ form{
     background-color:rgba(71, 61, 139, 0.881);
     color: white;
     padding: 2rem;
+}
+.contactlogo {
+    width: 22rem;
+    height: 15rem;
+    border-radius: 20px;
+}
+.contactlogodiv {
+    display: flex;
+    justify-content: center;
 }
 
 form {
@@ -337,12 +342,3 @@ a {
     margin-top: 30px;
 }
 
-.contactlogo {
-    width: 22rem;
-    height: 15rem;
-    border-radius: 20px;
-}
-.contactlogodiv {
-    display: flex;
-    justify-content: center;
-}
