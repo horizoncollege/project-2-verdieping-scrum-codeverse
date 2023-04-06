@@ -14,13 +14,13 @@
         <br>
             <!--the form to register an account-->
             <div class="login">
-            <form action="index.php" method="post">
+            <form method="post">
                 
                 <input type="text" name="username" placeholder="username" required>
                 <br>
                 <input type="password" name="password" placeholder="password" required>
                 <br>
-                <input type="email" name="password" placeholder="e-mail" required>
+                <input type="email" name="email" placeholder="e-mail" required>
                 <button class="button-name">register</button>
             </form>
             <div class="login-register-member">
@@ -28,6 +28,29 @@
             </div>
             </div>
     </div>
+
+    <?php 
+    
+    if (isset($_POST)) {
+        include('config.php');
+        $user = $_POST['username'];
+        $pass = $_POST['password'];
+        $email = $_POST['email'];
+        
+        $sql = "INSERT INTO users (nameuser, password, email, permissions) VALUES (:username, :password, :email, 0)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindParam(":username", $user);
+        $stmt->bindParam(":password", $pass);
+        $stmt->bindParam(":email", $email);
+        $stmt->execute();
+        session_start();
+        $_SESSION['username'] = $result['username'];
+        header('location:index.php');
+        $conn = null;
+    }
+    
+    ?>
+
 </body>
 
 </html>
