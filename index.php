@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <?php include('nav.php');
+    <?php include('nav.php'); include('config.php');
 
     $sql = "SELECT * FROM code WHERE public = 1";
     $stmt = $conn->prepare($sql);
