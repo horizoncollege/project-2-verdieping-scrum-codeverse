@@ -13,6 +13,7 @@
         <img class="logo" src="images/logo.png">
         <br>
         <div class="login">
+            <!--the form for the login data-->
             <form method="post">
                 <label>Username:</label>
                 <input type="text" name="username" required><br><br>
@@ -27,6 +28,7 @@
     </div>
 
     <?php
+    //starts the session when logged in
     session_start();
     if (isset($_POST['username']) && isset($_POST['password'])) {
         include('config.php');
