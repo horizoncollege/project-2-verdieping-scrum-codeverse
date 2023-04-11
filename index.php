@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!--navbar and connect the database-->
     <?php include('nav.php'); include('config.php');
     
     $sql = "SELECT * FROM code WHERE public = 1";
@@ -19,7 +20,7 @@
     ?>
     <div class="maincontainer">
         <p class="search">search bar<input type="search"></p>
-
+        <!--the repositories-->
         <?php
         foreach ($stmt as $nog) {
         echo "<div class='rows'>";
