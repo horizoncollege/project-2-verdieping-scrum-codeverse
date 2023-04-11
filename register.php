@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <?php error_reporting(0);?>
     <div class="logincontainer">
         <img class="logo" src="images/logo.png">
         <br>
