@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
@@ -37,8 +38,8 @@
                 <input type="email" required id="email" name="email"></input>
                 <!--message-->
                 <label for="message">Message:</label>
-                <textarea maxlength="500" id="message" name="message" rows="5" required></textarea>
-                <button class="button-name" type="submit" value="Send"></button>
+                <textarea style="resize:none;" maxlength="500" id="message" name="message" rows="5" required></textarea>
+                <input class="button-name" type="submit" value="Login">
             </form>
         </div>
 

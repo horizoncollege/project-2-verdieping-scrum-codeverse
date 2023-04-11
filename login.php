@@ -48,7 +48,7 @@
             header("Location: index.php");
         } else {
             $_SESSION['loggedInUser'] = "fout";
-            echo "FOUT!!! SUSSSSS!! AMOGUS";
+            echo "password or username is wrong";
         }
     }
     
