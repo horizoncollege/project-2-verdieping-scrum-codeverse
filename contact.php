@@ -26,7 +26,7 @@
         </div>
         <!--the form for contacting the devs-->
         <div class="contactcontainer">
-            <form method="post" action="amongus.php">
+            <form method="post" action="send.php">
                 <!--firstname-->
                 <label for="firstname">First name:</label>
                 <input type="text" required id="firstname" name="firstname"></input>
