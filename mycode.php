@@ -10,11 +10,29 @@
 </head>
 
 <body>
-    <?php include('nav.php'); ?>
+<?php include('nav.php'); include('config.php');
+
+$sql = "SELECT * FROM code WHERE public = 1";
+$stmt = $conn->prepare($sql);
+$stmt->execute();
+$stmt->setFetchMode(PDO::FETCH_ASSOC);
+?>
     <!--this box shows your own repsitory's-->
     <div class="maincontainer">
         <p class="search">search:<input type="search">
         <a href="submitcode.php"><input class="add-code-button" type="submit" value="Add code"></a></p>
+        <?php
+        foreach ($stmt as $nog) {
+            echo "<div class='rows'>";
+            echo "<a id='detailbutton' href='detail.php?id=" . $nog['id'] . "'><div class='codebox'>";
+    
+            echo "<p>Repository name: " . $nog['repository'] . "</p>";
+            echo "<p>Author: " . $nog['author'] . "</p>";
+            echo "<p>" . $nog['date'] . " " . $nog['tags'] . " " . $nog['licence'] . "</p>";
+            echo "</a></div>";
+            echo "</div>";
+            }
+            ?>
     </div>
 
     <?php include('footer.php'); ?>
