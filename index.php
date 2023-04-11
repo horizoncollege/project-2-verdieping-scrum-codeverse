@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="images/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>CodeVerse</title>
+    
 </head>
 
 <body>
@@ -21,10 +22,11 @@
     ?>
     <div class="maincontainer">
     <div class="search">  
-<form>   
+    <form action="/search" method="get">  
 <input type="text" placeholder=" Search...." name="search">   
 <button type="submit">search</button>   
 </form>  
+
 </div>
         <!--the repositories-->
         <?php
