@@ -26,7 +26,7 @@ $stmt->setFetchMode(PDO::FETCH_ASSOC);
         <?php
         foreach ($stmt as $nog) {
             echo "<div class='rows'>";
-            echo "<a id='detailbutton' href='detail.php?id=" . $nog['id'] . "'><div class='codebox'>";
+            echo "<a id='detailbutton' href='edit.php?id=" . $nog['id'] . "'><div class='codebox'>";
     
             echo "<p>Repository name: " . $nog['repository'] . "</p>";
             echo "<p>Author: " . $nog['author'] . "</p>";
