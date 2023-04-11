@@ -11,7 +11,7 @@
 
 <body>
 <?php session_start(); include('nav.php'); include('config.php'); if (!isset($_SESSION['username'])) {header("location:login.php");} ?>
- <!--the datails of the repository's-->
+ <!--the details of the repositories-->
     <div class="maincontainer">
         <h1>add code</h1>
         <form method="POST" action="process.php">

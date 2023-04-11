@@ -10,9 +10,8 @@
 </head>
 
 <body>
-    <!--navbar and connect the database-->
-    <?php include('nav.php'); include('config.php');
-    
+    <?php session_start(); include('nav.php'); include('config.php'); if (!isset($_SESSION['username'])) {header("location:login.php");}
+
     $sql = "SELECT * FROM code WHERE public = 1";
     $stmt = $conn->prepare($sql);
     $stmt->execute();

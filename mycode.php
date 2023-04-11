@@ -10,32 +10,31 @@
 </head>
 
 <body>
-<?php include('nav.php'); include('config.php');
+<?php session_start(); include('nav.php'); include('config.php'); if (!isset($_SESSION['username'])) {header("location:login.php");}
 
-$sql = "SELECT * FROM code WHERE public = 1";
+$user = $_SESSION['username'];
+$sql = "SELECT * FROM code WHERE author = '$user'";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 ?>
-    <!--this box shows your own repsitory's-->
-    <div class="maincontainer">
-        <p class="search">search:<input type="search">
-        <a href="submitcode.php"><input class="add-code-button" type="submit" value="Add code"></a></p>
-        <?php
-        foreach ($stmt as $nog) {
-            echo "<div class='rows'>";
-            echo "<a id='detailbutton' href='detail.php?id=" . $nog['id'] . "'><div class='codebox'>";
-    
-            echo "<p>Repository name: " . $nog['repository'] . "</p>";
-            echo "<p>Author: " . $nog['author'] . "</p>";
-            echo "<p>" . $nog['date'] . " " . $nog['tags'] . " " . $nog['licence'] . "</p>";
-            echo "</a></div>";
-            echo "</div>";
-            }
-            ?>
-    </div>
+<div class="maincontainer">
+    <p class="search">search bar<input type="search"></p>
 
-    <?php include('footer.php'); ?>
+    <?php
+    foreach ($stmt as $nog) {
+    echo "<div class='rows'>";
+    echo "<a id='detailbutton' href='detail.php?id=" . $nog['id'] . "'><div class='codebox'>";
+
+    echo "<p>Repository name: " . $nog['repository'] . "</p>";
+    echo "<p>Author: " . $nog['author'] . "</p>";
+    echo "<p>" . $nog['date'] . " " . $nog['tags'] . " " . $nog['licence'] . "</p>";
+    echo "</a></div>";
+    echo "</div>";
+    }
+    ?>
+
+</div>
 </body>
 
 </html>
