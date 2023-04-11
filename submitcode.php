@@ -36,7 +36,7 @@
         </form>
     </div>
 
-
+    <?php include('footer.php'); ?>
 
     <style>
         .editor-holder {

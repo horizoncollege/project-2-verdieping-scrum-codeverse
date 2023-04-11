@@ -30,6 +30,6 @@ $data = [
 
     $conn = null;
 
-    header("location:index.php");
+    header("location:mycode.php");
 
     ?>
