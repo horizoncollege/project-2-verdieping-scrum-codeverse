@@ -19,7 +19,7 @@
     ?>
     <div class="maincontainer">
         <p class="search">search bar<input type="search"></p>
-
+        <!--the repositories-->
         <?php
         foreach ($stmt as $nog) {
         echo "<div class='rows'>";

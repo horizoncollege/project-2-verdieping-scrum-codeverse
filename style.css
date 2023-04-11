@@ -11,12 +11,11 @@ a{
 /* index page */
 
 .maincontainer {
-    margin-top: 50px;
-    margin-left: 300px;
+    margin: auto;
+    width: 60%;
     background-color: #e3e3e3;
-    width: 56.6rem;
-    height: 40rem;
     border-style: solid;
+    height: 40rem;
     border-color: rgb(141, 141, 141);
 }
 
@@ -69,7 +68,7 @@ margin-left: 5em;
 
 /* navbar */
 nav {
-
+margin-bottom: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

@@ -26,7 +26,7 @@
         </select>
         <div class="editor-holder">
         <div class="scroller">
-            <textarea required spellcheck="false" class="editor allow-tabs">
+            <textarea name="code" required spellcheck="false" class="editor allow-tabs">
 
             </textarea>
             <pre><code class="syntax-highight html"></code></pre>
