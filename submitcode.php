@@ -29,7 +29,7 @@
 
       
       
-      <select required name="public">
+      <select class="submitcodeinh" required name="public" >
         <option value="1">public</option>
         <option value="0">private</option>
       </select>
@@ -150,5 +150,10 @@
   .h1submit {
     display: flex;
     justify-content: center;
+  }
+
+  .submitcodeinh {
+    margin-top: 1rem;
+    width: 20rem;
   }
 </style>
