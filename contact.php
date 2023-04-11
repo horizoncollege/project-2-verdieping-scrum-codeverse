@@ -38,7 +38,7 @@
                 <input type="email" required id="email" name="email"></input>
                 <!--message-->
                 <label for="message">Message:</label>
-                <textarea maxlength="500" id="message" name="message" rows="5" required></textarea>
+                <textarea style="resize:none;" maxlength="500" id="message" name="message" rows="5" required></textarea>
                 <input class="button-name" type="submit" value="Login">
             </form>
         </div>
