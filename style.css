@@ -358,6 +358,27 @@ input.codefield {
     color: #4AF626;
 }
 
+/* edit */
+
+.formcolumn {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    
+}
+
+.nigg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.formrow {
+    display: flex;
+    justify-content: space-around;
+    max-width: 20rem;
+}
+
 /* footer style */
 
 footer {

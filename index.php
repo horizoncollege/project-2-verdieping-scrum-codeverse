@@ -8,7 +8,6 @@
     <link rel="icon" type="image/x-icon" href="images/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>CodeVerse</title>
-    
 </head>
 
 <body>
@@ -21,13 +20,7 @@
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
     ?>
     <div class="maincontainer">
-    <div class="search">  
-    <form action="/search" method="get">  
-<input type="text" placeholder=" Search...." name="search">   
-<button type="submit">search</button>   
-</form>  
-
-</div>
+        <p class="search">search bar<input type="search"></p>
         <!--the repositories-->
         <?php
         foreach ($stmt as $nog) {
