@@ -19,13 +19,16 @@
   } ?>
   <!--the details of the repositories-->
   <div class="maincontainer">
-    <h1>add code</h1>
+    <h1 class="h1submit">add code</h1>
     <form method="POST" action="process.php">
-      <input class="detailinh" type="text" required name="repository" placeholder="repository">
-      <input class="detailinh" type="date" required name="date">
-      <input class="detailinh" type="text" required name="language" placeholder="programming language">
-      <input class="detailinh" type="text" required name="tags" placeholder="tags">
-      <input class="detailinh" required type="text" name="licence" placeholder="licence">
+      <input class="submitcodeinh" type="text" required name="repository" placeholder="repository">
+      <input class="submitcodeinh" type="date" required name="date">
+      <input class="submitcodeinh" type="text" required name="language" placeholder="programming language">
+      <input class="submitcodeinh" type="text" required name="tags" placeholder="tags">
+      <input class="submitcodeinh" required type="text" name="licence" placeholder="licence">
+
+      
+      
       <select required name="public">
         <option value="1">public</option>
         <option value="0">private</option>
@@ -38,7 +41,7 @@
           <pre><code class="syntax-highight html"></code></pre>
         </div>
       </div>
-      <button type="submit" value="submit">Submit</button>
+      <h1 class="h1submit"><a href="contact.php"><input class="button-name" type="submit" value="submit"></a></h1>
     </form>
   </div>
 
@@ -142,3 +145,10 @@
 </body>
 
 </html>
+
+<style>
+  .h1submit {
+    display: flex;
+    justify-content: center;
+  }
+</style>
