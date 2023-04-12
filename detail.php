@@ -25,18 +25,46 @@
     $stmt->execute();
     $result = $stmt->fetch();
     ?>
-    <!--the details of the repository-->
-    <div class="container">
-        <h3><?php echo $result['repository'];?></h3>
-        <p class="detailinh">Made by: <?php echo $result['author'];?></p>
-        <p class="detailinh">Tags: <?php echo $result['tags'];?></p>
-        <p class="detailinh">Tags: <?php echo $result['language'];?></p>
-        <p class="detailinh">Last version: <?php echo $result['date'];?></p>
-        <p class="detailinh">Licence: <?php echo $result['licence'];?></p>
-        <p class="detailinh">Code:</p>
-        <!-- use a <pre> tag with a <code> tag for displaying the code -->
-        <pre><code class="textareacode"<?php echo $result['language'];?>><?php echo htmlspecialchars($result['code']);?></code></pre>
-    </div>
+
+<div class="body">
+
+      <div class="container">
+          <h3 class="search"><?php echo $result['repository'];?></h3>
+              <div class="detailcolumn">
+                  <div class="detailedit">
+
+                      <div class="detailrow">
+                      <label for="date">Date:</label>
+                      <time name="date"><?php echo $result['date'];?></time>
+                      </div>
+
+                      <div class="detailrow">
+                      <label for="language">Language:</label>
+                      <p name="language"><?php echo $result['language'];?></p>
+                      </div>
+
+                      <div class="detailrow">
+                      <label for="tags">Tags:</label>
+                      <p ame="tags"><?php echo $result['tags'];?></p>
+                      </div>
+
+                      <div class="detailrow">
+                      <label for="licence">Licence:</label>
+                      <p name="licence"><?php echo $result['licence'];?></p>
+                      </div>
+
+                      <div class="detailrow">
+                      <label for="public">Visibility:</label>
+                      <p name="public"><?php echo $result['public'];?></p>
+                      </div>
+                      <pre><code class="textareacode"<?php echo $result['language'];?>><?php echo htmlspecialchars($result['code']);?></code></pre>
+                  </div>
+              </div>
+      </div>
+
+
+</div>
+
     <?php include('footer.php'); ?>
 
     <!-- include the highlight.js script and initialize it -->

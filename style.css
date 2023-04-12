@@ -18,6 +18,11 @@ h3 {
     justify-content: center;
     font-size: 25px;
 }
+
+.body {
+    display: flex;
+    justify-content: center;
+}
 /* index page */
 
 .maincontainer {
@@ -29,8 +34,6 @@ h3 {
     border-color: rgb(141, 141, 141);
 }
 .container {
-    margin-top: 50px;
-    margin-left: 300px;
     background-color: #e3e3e3;
     width: 56.6rem;
     height: 40rem;
@@ -331,15 +334,6 @@ form{
     overflow: auto;
 }
 
-.detailinh {
-    margin-left: 5rem;
-}
-.detailinh:nth-child(7) {
-    font-size: large;
-    border-bottom: none;
-    margin-top: 3rem;
-}
-
 .codefield {
     background-color: #191919;
     width: 48rem;
@@ -357,6 +351,29 @@ input.codefield {
     color: #4AF626;
 }
 
+.detailcolumn {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    
+}
+
+.detailedit {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.detailrow {
+    display: flex;
+    align-items: center;
+    max-width: 9rem;
+    max-height: 3rem;
+    margin: 0.2rem;
+    padding: 1rem;
+    background-color: rgb(205, 205, 205);
+}
 /* edit */
 
 .formcolumn {
