@@ -18,7 +18,10 @@ a{
     height: 40rem;
     border-color: rgb(141, 141, 141);
 }
-
+.h1submit {
+    display: flex;
+    justify-content: center;
+}
 .container {
     margin-top: 50px;
     margin-left: 300px;
@@ -426,7 +429,7 @@ a {
 
 .editor-holder {
     width: 800px;
-    height: 500px;
+    height: 600px;
     margin-top: 50px;
     border-radius: 3px;
     position: relative;
@@ -439,7 +442,6 @@ a {
   }
 
   .editor-holder textarea, .editor-holder code {
-    width: 100%;
     height: auto;
     min-height: 450px;
     font-size: 14px;
