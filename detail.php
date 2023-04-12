@@ -14,7 +14,6 @@
 
 <body>
 <?php session_start();
-  include('nav.php');
   include('config.php');
   if (!isset($_SESSION['username'])) {
     header("location:login.php");
