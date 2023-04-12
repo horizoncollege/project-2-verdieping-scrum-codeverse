@@ -180,21 +180,37 @@ nav {
 }
 
 /* login page */
-.logincontainer {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin-top: 20px;
-    margin-left: 540px;
-}
+
+
 
 .login {
-    background-color: rgba(71, 61, 139, 0.881);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    background-color: #e3e3e3;
+    border-radius: 20px;
+
+}
+.login-user-pass {
+    width: 21rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: rgb(205, 205, 205);
+    border-style: solid;
+    border-color: rgb(198, 198, 198);
+}
+    
+
+
+.login-h1 {
+display: flex;
+justify-content: space-around;
+position: sticky;
+margin: auto;
+color: white;
+font-size: 4rem;
+height: 5rem;
+border-radius: 20px 20px 0px 0px;
+border-bottom-style: solid;
+border-color: rgb(172, 172, 172);
+background-color: rgba(71, 61, 139, 0.881);
 }
 
 .register-button {
@@ -205,11 +221,29 @@ nav {
 
 .register-a {
     text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
 }
 
 .login-a {
     text-decoration: none;
+    color: black;
 }
+
+
+
+
+
+
+.logincontainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-left: 540px;
+}
+
 
 .login-button {
     display: flex;

@@ -13,14 +13,18 @@
         <img class="logo" src="images/logo.png">
         <br>
         <div class="login">
+        <h1 class="login-h1">login</h1>
             <!--the form for the login data-->
             <form method="post">
-                <div class="login-user">
+                <div class="login-user-pass">
                     <label>Username:</label>
                     <input type="text" name="username" required><br><br>
                 </div>
-                <label>Password:</label>
-                <input type="password" name="password" required><br><br>
+                <br>
+                <div class="login-user-pass">
+                    <label>Password:</label>
+                    <input type="password" name="password" required><br><br>
+                </div>
                 <input class="button-name" type="submit" value="Login">
 
                 <?php

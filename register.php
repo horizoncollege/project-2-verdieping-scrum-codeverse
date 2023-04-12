@@ -16,13 +16,19 @@
         <br>
             <!--the form to register an account-->
             <div class="login">
+            <h1 class="login-h1">register</h1>
             <form method="post">
-                
+            <div class="login-user-pass">
                 <input type="text" name="username" placeholder="username" required>
+                </div>
                 <br>
+                <div class="login-user-pass">
                 <input type="password" name="password" placeholder="password" required>
+                </div>
                 <br>
+                <div class="login-user-pass">
                 <input type="email" name="email" placeholder="e-mail" required>
+                </div>
                 <button class="button-name">register</button>
             </form>
             <div class="login-register-member">
