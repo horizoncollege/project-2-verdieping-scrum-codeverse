@@ -55,7 +55,7 @@
 
                       <div class="detailrow">
                       <label for="public">Visibility:</label>
-                      <p name="public"><?php echo $result['public'];?></p>
+                      <p name="public"><?php echo ($result['public'] == 0) ? 'private' : 'public'; ?></p>
                       </div>
                       <pre><code class="textareacode"<?php echo $result['language'];?>><?php echo htmlspecialchars($result['code']);?></code></pre>
                   </div>
