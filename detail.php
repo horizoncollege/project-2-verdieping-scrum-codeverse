@@ -26,14 +26,46 @@
     $result = $stmt->fetch();
     ?>
     <!--the details of the repository-->
-    <div class="container">
-        <h3><?php echo $result['repository'];?></h3>
-        <p class="detailinh">Made by: <?php echo $result['author'];?></p>
-        <p class="detailinh">Tags: <?php echo $result['tags'];?></p>
-        <p class="detailinh">Tags: <?php echo $result['language'];?></p>
-        <p class="detailinh">Last version: <?php echo $result['date'];?></p>
-        <p class="detailinh">Licence: <?php echo $result['licence'];?></p>
-        <p class="detailinh">Code:</p>
+    <div class="maincontainer">
+        <div class="formcolumn">
+            <form method="POST" action="process.php" class="nigg">
+                
+                <div class="formrow">
+                <label class="detailmarg" for="repository">Repository name:</label>
+                <p><?php echo $result['repository'];?></p>
+                </div>
+
+                <div class="formrow">
+                <label class="detailmarg" for="date">Date:</label>
+                <p><?php echo $result['date'];?></p>
+                </div>
+
+                <div class="formrow">
+                <label class="detailmarg" for="language">Language:</label>
+                <p><?php echo $result['language'];?></p>
+                </div>
+
+                <div class="formrow">
+                <label class="detailmarg" for="tags">Tags:</label>
+                <p><?php echo $result['tags'];?></p>
+                </div>
+
+                <div class="formrow">
+                <label class="detailmarg" for="licence">Licence:</label>
+                <p><?php echo $result['licence'];?></p>
+                </div>
+
+                <div class="formrow">
+                <label class="detailmarg" for="public">Visibility:</label>
+                <p><?php $result['public'];
+                if($result['public'] = 1){
+                  echo 'public';
+                } else {
+                  echo 'private';
+                }?></p>
+                </div>
+        </div>
+        <br><br><br><br><br><br><br>
         <!-- use a <pre> tag with a <code> tag for displaying the code -->
         <pre><code class="textareacode"<?php echo $result['language'];?>><?php echo htmlspecialchars($result['code']);?></code></pre>
     </div>
