@@ -18,32 +18,57 @@
     header("location:login.php");
   } ?>
   <!--the details of the repositories-->
+
+
   <div class="maincontainer">
-    <h1 class="h1submit">add code</h1>
-    <form method="POST" action="process.php">
-      <input class="submitcodeinh" type="text" required name="repository" placeholder="repository">
-      <input class="submitcodeinh" type="date" required name="date">
-      <input class="submitcodeinh" type="text" required name="language" placeholder="programming language">
-      <input class="submitcodeinh" type="text" required name="tags" placeholder="tags">
-      <input class="submitcodeinh" required type="text" name="licence" placeholder="licence">
+    <h3 class="search"> add code</h3>
+        <div class="formcolumn">
+            <form method="POST" action="process.php" class="nigg">
+                
+                <div class="formrow">
+                <label for="repository">Repository name:</label>
+                <input class="submitcodeinh" type="text" required name="repository" placeholder="repository">
+                </div>
 
-      
-      
-      <select class="submitcodeinh" required name="public" >
-        <option value="1">public</option>
-        <option value="0">private</option>
-      </select>
-      <div class="editor-holder">
-        <div class="scroller">
-          <textarea name="code" required spellcheck="false" class="editor allow-tabs">
+                <div class="formrow">
+                <label for="date">Date:</label>
+                <input class="submitcodeinh" type="date" required name="date">
+                </div>
 
-            </textarea>
-          <pre><code class="syntax-highight html"></code></pre>
+                <div class="formrow">
+                <label for="language">Language:</label>
+                <input class="submitcodeinh" type="text" required name="language" placeholder="programming language">
+                </div>
+
+                <div class="formrow">
+                <label for="tags">Tags:</label>
+                <input class="submitcodeinh" type="text" required name="tags" placeholder="tags">
+                </div>
+
+                <div class="formrow">
+                <label for="licence">Licence:</label>
+                <input class="submitcodeinh" required type="text" name="licence" placeholder="licence">
+                </div>
+
+                <div class="formrow">
+                <label for="public">Visibility:</label>
+                <select required name="public" >
+                    <option value="1">public</option>
+                    <option value="0">private</option>
+                </select>
+                </div>
         </div>
-      </div>
-      <h1 class="h1submit"><a href="contact.php"><input class="button-name" type="submit" value="submit"></a></h1>
-    </form>
-  </div>
+                <div class="editor-holder">
+                <div class="scroller">
+                    <textarea name="code" required spellcheck="false" class="editor allow-tabs"></textarea>
+                    <pre><code class="syntax-highight html"></code></pre>
+                </div>
+                </div>
+
+                <h1 class="h1submit"><a href="contact.php"><input class="button-name" type="submit" value="submit"></a></h1>
+            </form>
+</div>
+
 
   <?php include('footer.php'); ?>
 
@@ -146,14 +171,3 @@
 
 </html>
 
-<style>
-  .h1submit {
-    display: flex;
-    justify-content: center;
-  }
-
-  .submitcodeinh {
-    margin-top: 1rem;
-    width: 20rem;
-  }
-</style>

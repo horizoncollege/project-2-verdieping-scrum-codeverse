@@ -11,7 +11,11 @@
 </head>
 
 <body>
-
+<?php session_start();
+  include('config.php');
+  if (!isset($_SESSION['username'])) {
+    header("location:login.php");
+  } ?>
     <?php include('nav.php'); ?>
 
     <div class="flow">

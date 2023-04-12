@@ -13,6 +13,11 @@
 </head>
 
 <body>
+<?php session_start();
+  include('config.php');
+  if (!isset($_SESSION['username'])) {
+    header("location:login.php");
+  } ?>
     <?php include('nav.php'); include('config.php'); 
     $id = $_GET['id'];
     $sql = "SELECT * FROM code WHERE id = $id";
