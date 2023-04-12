@@ -171,6 +171,7 @@ body {
 form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 40px;
 }
 .register-button{
@@ -367,7 +368,7 @@ input.codefield {
     
 }
 
-.nigg {
+.formedit {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -425,8 +426,8 @@ a {
 
 
 .editor-holder {
-    width: 800px;
-    height: 500px;
+    width: 45rem;
+    height: 20rem;
     margin-top: 50px;
     border-radius: 3px;
     position: relative;

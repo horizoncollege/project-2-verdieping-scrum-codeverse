@@ -24,31 +24,31 @@
 <div class="container">
     <h3 class="search"><?php echo $result['repository'];?></h3>
         <div class="formcolumn">
-            <form method="POST" action="process.php" class="nigg">
+            <form method="POST" action="update.php" class="formedit">
                 
                 <div class="formrow">
                 <label for="repository">Repository name:</label>
-                <input type="text" required name="repository" placeholder="<?php echo $result['repository'];?>">
+                <input type="text" required name="repository" value="<?php echo $result['repository'];?>">
                 </div>
 
                 <div class="formrow">
                 <label for="date">Date:</label>
-                <input type="date" required name="date" placeholder="<?php echo $result['date'];?>">
+                <input type="date" required name="date" value="<?php echo $result['date'];?>">
                 </div>
 
                 <div class="formrow">
                 <label for="language">Language:</label>
-                <input type="text" required name="language" placeholder="<?php echo $result['language'];?>">
+                <input type="text" required name="language" value="<?php echo $result['language'];?>">
                 </div>
 
                 <div class="formrow">
                 <label for="tags">Tags:</label>
-                <input type="text" required name="tags" placeholder="<?php echo $result['tags'];?>">
+                <input type="text" required name="tags" value="<?php echo $result['tags'];?>">
                 </div>
 
                 <div class="formrow">
                 <label for="licence">Licence:</label>
-                <input required type="text" name="licence" placeholder="<?php echo $result['licence'];?>">
+                <input required type="text" name="licence" value="<?php echo $result['licence'];?>">
                 </div>
 
                 <div class="formrow">

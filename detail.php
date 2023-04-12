@@ -30,7 +30,7 @@
         <p class="detailinh">Licence: <?php echo $result['licence'];?></p>
         <p class="detailinh">Code:</p>
         <!-- use a <pre> tag with a <code> tag for displaying the code -->
-        <pre><code class="textareacode"<?php echo $result['language'];?>"><?php echo htmlspecialchars($result['code']);?></code></pre>
+        <pre><code class="textareacode"<?php echo $result['language'];?>><?php echo htmlspecialchars($result['code']);?></code></pre>
     </div>
     <?php include('footer.php'); ?>
 
