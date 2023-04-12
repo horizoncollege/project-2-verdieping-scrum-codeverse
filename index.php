@@ -20,7 +20,12 @@
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
     ?>
     <div class="maincontainer">
-        <p class="search">search bar<input type="search"></p>
+    <div class="search">  
+<form>   
+<input type="text" placeholder=" Search...." name="search">   
+<button type="submit">search</button>   
+</form>  
+</div>
         <!--the repositories-->
         <?php
         foreach ($stmt as $nog) {
