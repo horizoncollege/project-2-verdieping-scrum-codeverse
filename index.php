@@ -38,7 +38,7 @@
 
         $pdoquery = "SELECT * FROM code WHERE name = :id ";
         $pdoquery_run = $conn->prepare($pdoquery);
-        $pdoquery_exec = $pdoquery_run->execute(array(":id" =>'id'));
+        $pdoquery_exec = $pdoquery_run->execute(array(":id" => 'id'));
 
         if ($pdoquery_exec) {
             if ($pdoquery_run->rowCount() > 0) {
@@ -60,12 +60,9 @@
 
     ?>
     <div class="maincontainer">
-        <div class="search">
-            <form class="searchbar">
-                <input id="searchbar" type="text" placeholder=" Search...." name="search">
-                <button id="searchbutton" type="submit">search</button>
-            </form>
-        </div>
+        <p class="search">search:<input type="search">
+            <a href="submitcode.php"><input class="add-code-button" type="submit" value="Add code"></a>
+        </p>
         <!--the repositories-->
         <?php
         foreach ($stmt as $nog) {
