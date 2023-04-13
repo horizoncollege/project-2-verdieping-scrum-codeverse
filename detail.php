@@ -59,24 +59,21 @@
                       </div>
                       <pre><code class="textareacode"<?php echo $result['language'];?>><?php echo htmlspecialchars($result['code']);?></code></pre>
                   </div>
-                  <button id="generate-link-btn">Generate Random Link</button>
-    <p id="random-link"></p>
-    <script>
-      function generateRandomLink() {
-        var letters = 'abcdefghijklmnopqrstuvwxyz';
-        var link = 'https://CodeVerse.com//';
-        for (var i = 0; i < 10; i++) {
-          link += letters.charAt(Math.floor(Math.random() * letters.length));
-        }
-        return link;
-      }
+    <input disabled type="text" value="localhost//////project-2-verdieping-scrum-codeverse/detail.php?id=2" id="myInput">
+<button onclick="myFunction()">Copy text</button>
 
-      var generateLinkBtn = document.getElementById('generate-link-btn');
-      var randomLink = document.getElementById('random-link');
-      generateLinkBtn.addEventListener('click', function() {
-        randomLink.textContent = generateRandomLink();
-      });
-    </script>
+<script>
+function myFunction() {
+
+  var copyText = document.getElementById("myInput");
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+
+  navigator.clipboard.writeText(copyText.value);
+  
+}
+</script>
               </div>
       </div>
 
