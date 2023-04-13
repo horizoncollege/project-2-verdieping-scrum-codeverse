@@ -26,10 +26,11 @@
     $result = $stmt->fetch();
     ?>
 
+<div class="body">
 <div class="container">
     <h3 class="search"><?php echo $result['repository'];?></h3>
         <div class="formcolumn">
-            <form method="POST" action="update.php" class="formedit">
+            <form method="POST" action="update.php" class="nigg">
                 
                 <div class="formrow">
                 <label for="repository">Repository name:</label>
@@ -73,6 +74,8 @@
 
                 <h1 class="h1submit"><a href="contact.php"><input class="button-name" type="submit" value="submit"></a></h1>
             </form>
+</div>
+
 </div>
 
 </body>
