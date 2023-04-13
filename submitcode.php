@@ -23,7 +23,7 @@
   <div class="maincontainer">
     <h3 class="search"> add code</h3>
         <div class="formcolumn">
-            <form method="POST" action="process.php" class="nigg">
+            <form method="POST" action="process.php" class="nog">
                 
                 <div class="formrow">
                 <label for="repository">Repository name:</label>

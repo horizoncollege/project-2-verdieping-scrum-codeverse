@@ -27,5 +27,7 @@ At my codes you can see your own repositories both public and private, if you cl
 
 Known isseus:
 1. The searchbar does not post the repositories when you try to search for one.
+2. needs more comments.
+3. sort
 
 

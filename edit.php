@@ -30,7 +30,7 @@
 <div class="maincontainer">
     <h3 class="search"><?php echo $result['repository'];?></h3>
         <div class="formcolumn">
-            <form method="POST" action="update.php" class="nigg">
+            <form method="POST" action="update.php" class="nog">
                 
               <input type="hidden" value="<?php echo $id; ?>" name="ident">
 
