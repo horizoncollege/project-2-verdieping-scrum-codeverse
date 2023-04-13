@@ -67,7 +67,7 @@
         </div>
                 <div class="editor-holder">
                 <div class="scroller">
-                    <textarea name="code" required spellcheck="false" class="editor allow-tabs"></textarea>
+                    <textarea name="code" required spellcheck="false" class="editor allow-tabs"><?php echo $result['code']?></textarea>
                     <pre><code class="syntax-highight html"></code></pre>
                 </div>
                 </div>
