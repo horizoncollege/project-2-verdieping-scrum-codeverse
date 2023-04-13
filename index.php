@@ -34,11 +34,11 @@
     $license = "";
 
     if (isset($_post['search'])) {
-        $name = $_post['name'];
+        $name = $_post['id'];
 
-        $pdoquery = "SELECT * FROM code WHERE name = :name ";
+        $pdoquery = "SELECT * FROM code WHERE name = :id ";
         $pdoquery_run = $conn->prepare($pdoquery);
-        $pdoquery_exec = $pdoquery_run->execute(array(":name" => name));
+        $pdoquery_exec = $pdoquery_run->execute(array(":id" =>'id'));
 
         if ($pdoquery_exec) {
             if ($pdoquery_run->rowCount() > 0) {
@@ -61,9 +61,9 @@
     ?>
     <div class="maincontainer">
         <div class="search">
-            <form>
-                <input type="text" placeholder=" Search...." name="search">
-                <button type="submit">search</button>
+            <form class="searchbar">
+                <input id="searchbar" type="text" placeholder=" Search...." name="search">
+                <button id="searchbutton" type="submit">search</button>
             </form>
         </div>
         <!--the repositories-->

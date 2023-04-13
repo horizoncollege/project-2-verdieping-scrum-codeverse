@@ -122,6 +122,16 @@ div.maincontainer {
 
 }
 
+.searchbar{
+    display: flex;
+    flex-direction: row;
+}
+
+#searchbutton{
+    width: 7rem;
+    height: 1,5rem;
+}
+
 .add-code-button {
     margin-left: 5em;
 }
