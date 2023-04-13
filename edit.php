@@ -32,6 +32,8 @@
         <div class="formcolumn">
             <form method="POST" action="update.php" class="nigg">
                 
+              <input type="hidden" value="<?php echo $id; ?>" name="ident">
+
                 <div class="formrow">
                 <label for="repository">Repository name:</label>
                 <input type="text" required name="repository" value="<?php echo $result['repository'];?>">
@@ -72,7 +74,7 @@
                 </div>
                 </div>
 
-                <h1 class="h1submit"><a href="contact.php"><input class="button-name" type="submit" value="submit"></a></h1>
+                <h1 class="h1submit"><button class="button-name" type="submit" value="submit">submit</button></h1>
             </form>
 </div>
 

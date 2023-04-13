@@ -2,8 +2,10 @@
 
 include("config.php");
 
+$id = $_POST['ident'];
+
 $sql = "UPDATE code SET repository = :repository, date = :date, language = :language, 
-tags = :tags, licence = :licence, public = :public, code = :code";
+tags = :tags, licence = :licence, public = :public, code = :code WHERE id = $id";
 $stmt = $conn->prepare($sql);
 
 $stmt->bindParam(':repository', $_POST['repository']);
