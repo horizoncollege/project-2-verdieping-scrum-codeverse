@@ -452,6 +452,7 @@ input.codefield {
 
 .nigg {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -460,6 +461,11 @@ input.codefield {
     display: flex;
     justify-content: space-around;
     max-width: 20rem;
+}
+
+.h1submit {
+    display: flex;
+    justify-content: center;
 }
 
 /* footer style */
@@ -507,8 +513,8 @@ footer {
 
 
 .editor-holder {
-    width: 800px;
-    height: 500px;
+    width: 650px;
+    height: 350px;
     margin-top: 50px;
     border-radius: 3px;
     position: relative;

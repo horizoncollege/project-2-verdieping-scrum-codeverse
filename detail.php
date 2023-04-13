@@ -59,6 +59,21 @@
                       </div>
                       <pre><code class="textareacode"<?php echo $result['language'];?>><?php echo htmlspecialchars($result['code']);?></code></pre>
                   </div>
+    <input disabled type="text" value="localhost//////project-2-verdieping-scrum-codeverse/detail.php?id=<?php echo $id; ?>" id="myInput">
+<button onclick="myFunction()">Copy text</button>
+
+<script>
+function myFunction() {
+
+  var copyText = document.getElementById("myInput");
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+
+  navigator.clipboard.writeText(copyText.value);
+  
+}
+</script>
               </div>
       </div>
 
