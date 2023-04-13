@@ -27,7 +27,7 @@
     ?>
 
 <div class="body">
-<div class="container">
+<div class="maincontainer">
     <h3 class="search"><?php echo $result['repository'];?></h3>
         <div class="formcolumn">
             <form method="POST" action="update.php" class="nigg">

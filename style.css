@@ -463,6 +463,11 @@ input.codefield {
     max-width: 20rem;
 }
 
+.h1submit {
+    display: flex;
+    justify-content: center;
+}
+
 /* footer style */
 
 footer {
