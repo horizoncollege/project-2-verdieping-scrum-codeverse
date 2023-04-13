@@ -61,9 +61,9 @@
     ?>
     <div class="maincontainer">
         <div class="search">
-            <form>
-                <input type="text" placeholder=" Search...." name="search">
-                <button type="submit">search</button>
+            <form class="searchbar">
+                <input id="searchbar" type="text" placeholder=" Search...." name="search">
+                <button id="searchbutton" type="submit">search</button>
             </form>
         </div>
         <!--the repositories-->
