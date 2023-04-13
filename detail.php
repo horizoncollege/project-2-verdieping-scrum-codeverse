@@ -59,6 +59,24 @@
                       </div>
                       <pre><code class="textareacode"<?php echo $result['language'];?>><?php echo htmlspecialchars($result['code']);?></code></pre>
                   </div>
+                  <button id="generate-link-btn">Generate Random Link</button>
+    <p id="random-link"></p>
+    <script>
+      function generateRandomLink() {
+        var letters = 'abcdefghijklmnopqrstuvwxyz';
+        var link = 'https://CodeVerse.com//';
+        for (var i = 0; i < 10; i++) {
+          link += letters.charAt(Math.floor(Math.random() * letters.length));
+        }
+        return link;
+      }
+
+      var generateLinkBtn = document.getElementById('generate-link-btn');
+      var randomLink = document.getElementById('random-link');
+      generateLinkBtn.addEventListener('click', function() {
+        randomLink.textContent = generateRandomLink();
+      });
+    </script>
               </div>
       </div>
 
