@@ -34,11 +34,11 @@
     $license = "";
 
     if (isset($_post['search'])) {
-        $name = $_post['name'];
+        $name = $_post['id'];
 
-        $pdoquery = "SELECT * FROM code WHERE name = :name ";
+        $pdoquery = "SELECT * FROM code WHERE name = :id ";
         $pdoquery_run = $conn->prepare($pdoquery);
-        $pdoquery_exec = $pdoquery_run->execute(array(":name" => name));
+        $pdoquery_exec = $pdoquery_run->execute(array(":id" =>'id'));
 
         if ($pdoquery_exec) {
             if ($pdoquery_run->rowCount() > 0) {
